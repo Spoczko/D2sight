@@ -1,0 +1,197 @@
+/*!!!!!!!!!!! QuickMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;}.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none !important;}.qmmc {position:relative;/*zoom:1;*/}.qmmc a, .qmmc li {float:left;display:block;white-space:nowrap; margin-left:10px;}.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}.qmsh div a {float:none;}.qmmc div{visibility:hidden;position:absolute;}.qmmc ul {left:-10000px;position:absolute;}.qmmc, .qmmc ul {list-style:none;padding:0px;margin:0px;}.qmmc li a {float:none}.qmmc li{position:relative;}.qmmc ul {z-index:10;}.qmmc ul ul {z-index:20;}.qmmc ul ul ul {z-index:30;}.qmmc ul ul ul ul {z-index:40;}.qmmc ul ul ul ul ul {z-index:50;}li:hover>ul{left:auto;}#qm0 ul {top:100%;}#qm0 ul li:hover>ul{top:0px;left:100%;}
+
+/*!!!!!!!!!!! QuickMenu Styles [Please Modify!] !!!!!!!!!!!*/
+
+
+
+/* QuickMenu 0 */
+
+/*"""""""" (MAIN) Container""""""""*/	
+#qm0	
+{	
+
+	background-color:transparent;
+	border: 0px solid black;
+	float: left;
+	margin: 7px auto 0;
+
+	
+}
+
+
+
+
+/*"""""""" (MAIN) Items""""""""*/	
+#qm0 a	
+{	
+	font-family: Lucida Grande, Verdana, Arial, Verdana, sans-serif;
+	font-size: 14px;
+	display: inline;
+	vertical-align: middle;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+  	color: #FFFFFF;
+	font-weight: bold;
+	
+}
+
+
+/*"""""""" (MAIN) Hover State""""""""*/	
+#qm0 a:hover	
+{	
+	/*color: white;
+	text-decoration: none;*/
+}
+
+
+#qm0 .qmparent
+{
+	/*background-image: url(/js/stmenu/1_bullet-arrow-white.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	/*width: auto;*/
+
+        
+	
+	
+}
+
+/*"""""""" (MAIN) Parent items""""""""*/	
+#qm0 .top
+{	
+	/*width: 95px;*/
+	padding-left: 5px;
+	padding-right: 15px;
+	height: 18px;
+	background: #640101;
+	background-position: left;
+	margin: 5px 1px 1px 1px;
+	font-weight: bold;
+	color: #FFFFFF;
+	display: inline;
+	float: none;
+	padding: 8px;
+	border-radius: 5px;
+        
+    
+	
+}
+#qm0 .top:hover
+{
+	#background: url(/images/top-nav-but2.png) repeat-x;
+}
+
+/*"""""""" (MAIN) Active State""""""""*/	
+body #qm0 .qmactive, body #qm0 .qmactive:hover	
+{
+
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 4px;
+
+
+  
+}
+
+
+/*"""""""" (SUB) Container""""""""*/	
+#qm0 div, #qm0 ul	
+{
+	margin-top: 2px;
+	margin-left: 3px;
+   width: 200px;
+	background: #650000;
+	border: 0px solid #000000;
+	padding: 5px;
+	text-align: left;
+  	/* for IE */
+  	filter:alpha(opacity=90);
+  	/* CSS3 standard */
+  	opacity:0.9;
+ 	z-index: 20;
+    -moz-box-shadow: 0 10px 20px 1px #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+    font-size: 16px;
+	
+}
+
+/*"""""""" (SUB) Items""""""""*/
+#qm0 div a, #qm0 ul a	
+{	
+
+	padding: 5px 5px 5px 5px;
+	width: auto;
+        color: #eeeeee;
+		border: 0px;
+		font-weight: normal;
+}
+
+#qm0 div span.non_link
+{	
+	display: block;
+	font-weight: bold;
+	#border-right: 1px solid #000000;
+	#border-bottom: 1px solid #000000;
+	#border-top: 1px solid #000000;
+	#border-left: 1px solid #000000;
+	padding: 5px 5px 5px 5px;
+	width: auto;
+}
+
+
+.qmmc div a, .qmmc ul a, .qmmc ul li {
+    float: none;
+    margin-left: 2px;
+}
+
+
+/*"""""""" (SUB) Hover State""""""""*/	
+#qm0 div a:hover, #qm0 ul a:hover	
+{
+	/*background-color: #a7a49a;*/
+	width: auto;
+	text-align: left;
+    color: #feaf00;
+    background-color: transparent;
+}
+
+
+/*"""""""" (SUB) Parent items""""""""*/	
+#qm0 div .qmparent	
+{
+	#background-image: url(/gfx/menuback.gif);
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+}
+
+/*"""""""" (SUB) Active State""""""""*/	
+body #qm0 div .qmactive, body #qm0 div .qmactive:hover	
+{
+	/*background-image: url(/js/stmenu/1_bullet-arrow-white.gif);
+	background-position: right center;
+	background-repeat: no-repeat;*/
+	background: #0E1821;
+	width: auto;
+	#background-image: url(/static/images/menuback.gif);
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+}
+
+/*"""""""" (MAIN) Persistent State """"""""*/
+#qm0 .qmpersistent
+{
+	/*background-image: url(/js/stmenu/menuback-on.gif);*/
+	color: #ffffff;
+	/*background-color: #77756F;*/
+}
+
+/*"""""""" (SUB) Persistent State """"""""*/
+#qm0 div .qmpersistent
+{
+
+	/*background: #77756F;*/
+}
